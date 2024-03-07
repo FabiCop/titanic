@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Spese Personali</title>
+    <link rel="stylesheet" href="style2.css"> <!-- Assicurati che il nome del file CSS sia corretto -->
+</head>
+<body>
+    <header>
+        <h1>Gestione delle Spese Personali</h1>
+    </header>
+    <nav>
+        <!-- Considera l'aggiunta di una barra di navigazione per migliorare l'usabilità -->
+        <a href="#inserimento-spese">Inserisci Spesa</a> |
+        <a href="#visualizzazione-spese">Visualizza Spese</a> |
+        <a href="#gestione-budget">Gestione Budget</a> |
+        <a href="#obiettivi-risparmio">Obiettivi di Risparmio</a>
+    </nav>
+    <main>
+        <section id="inserimento-spese">
+            <h2>Inserisci Spesa</h2>
+            <form id="form-spese" class="form-spese">
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <input type="date" id="data" name="data" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="descrizione">Descrizione:</label>
+                    <input type="text" id="descrizione" name="descrizione" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria" class="form-control">
+                        <option value="">Seleziona Categoria</option>
+                        <option value="cibo">Cibo</option>
+                        <option value="bollette">Bollette</option>
+                        <option value="intrattenimento">Intrattenimento</option>
+                        <!-- Aggiungi altre categorie secondo necessità -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="importo">Importo (€):</label>
+                    <input type="number" id="importo" name="importo" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Spesa</button>
+            </form>
+        </section>
+        
+        <section id="visualizzazione-spese">
+            <h2>Storico Spese</h2>
+            <div id="lista-spese">
+                <!-- Qui verranno visualizzate le spese inserite -->
+            </div>
+        </section>
+        
+        <section id="gestione-budget">
+            <h2>Imposta Budget</h2>
+            <form id="form-budget" class="form-budget">
+                <div class="form-group">
+                    <label for="categoria-budget">Categoria:</label>
+                    <select id="categoria-budget" name="categoria-budget" class="form-control">
+                        <option value="">Seleziona Categoria</option>
+                        <option value="cibo">Cibo</option>
+                        <option value="bollette">Bollette</option>
+                        <option value="intrattenimento">Intrattenimento</option>
+                        <!-- Aggiungi altre categorie secondo necessità -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="importo-budget">Budget (€):</label>
+                    <input type="number" id="importo-budget" name="importo-budget" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-set">Imposta Budget</button>
+            </form>
+            <div id="lista-budget">
+                <!-- Qui verranno visualizzati i budget impostati -->
+            </div>
+        </section>
+        
+        <section id="obiettivi-risparmio">
+            <h2>Obiettivi di Risparmio</h2>
+            <form id="form-obiettivi-risparmio" class="form-obiettivi-risparmio">
+                <div class="form-group">
+                    <label for="nome-obiettivo">Nome Obiettivo:</label>
+                    <input type="text" id="nome-obiettivo" name="nome-obiettivo" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="importo-obiettivo">Importo Obiettivo (€):</label>
+                    <input type="number" id="importo-obiettivo" name="importo-obiettivo" required class="form-control">
+                </div>
+                <button type="submit" class="btn btn-add">Aggiungi Obiettivo</button>
+            </form>
+            <div id="lista-obiettivi-risparmio">
+                <!-- Qui verranno visualizzati gli obiettivi di risparmio -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gestione Spese Personali</p>
+    </footer>
+    
+    <script src="script2.js"></script> <!-- Assicurati che il nome del file JavaScript sia corretto -->
+</body>
+</html>
