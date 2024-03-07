@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Spese Personali</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+    <header>
+        <h1>Gestione delle Spese Personali</h1>
+    </header>
+    <main>
+        <section id="bilancio">
+            <h2>Bilancio</h2>
+            <p>Stipendio mensile: <span id="stipendioMensile">0</span>€</p>
+            <p>Bilancio residuo: <span id="bilancioResiduo">0</span>€</p>
+            <button onclick="aggiungiSpesa()">Aggiungi Spesa</button>
+        </section>
+        <section id="salvadanaio">
+            <h2>Salvadanaio</h2>
+            <p>Somma accantonata: <span id="sommaAccantonata">0</span>€</p>
+            <label for="sommaDaAccantonare">Somma da accantonare ogni mese:</label>
+            <input type="number" id="sommaDaAccantonare" placeholder="Inserisci somma">
+            <button onclick="aggiornaSalvadanaio()">Aggiorna</button>
+        </section>
+        <section id="categorieSpesa">
+            <h2>Categorie di Spesa</h2>
+            <ul id="listaCategorie"></ul>
+            <button onclick="aggiungiCategoria()">Aggiungi Categoria</button>
+        </section>
+        <section id="storicoReport">
+            <h2>Storico e Report</h2>
+            <div id="reportSpese"></div>
+        </section>
+    </main>
+    <button class="toggle-theme">Cambia Tema</button>
+    <script src="script.js"></script>
+</body>
+</html>
