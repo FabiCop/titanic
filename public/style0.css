@@ -1,0 +1,85 @@
+/* Stili base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0275d8;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.centro-logo .logo-centrale {
+    max-width: 200px; /* Adatta questa dimensione al tuo logo */
+    margin: 0 auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stili per la sezione principale */
+main {
+    padding: 20px;
+}
+
+.descrizione-progetto h1 {
+    color: #0275d8;
+}
+
+/* Stili per la sezione FAQ */
+.faq {
+    margin-top: 50px;
+}
+
+.faq h2 {
+    color: #0275d8;
+}
+
+/* Stili per la sezione Contatti e Assistenza */
+.contatti-assistenza {
+    margin-top: 50px;
+}
+
+.contatti-assistenza h2 {
+    color: #0275d8;
+}
+
+/* Stili per le icone dei social media */
+.social-icon {
+    width: 40px; /* Adatta questa dimensione alle tue icone */
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
