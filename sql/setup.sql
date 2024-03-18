@@ -1,9 +1,9 @@
 -- Elimina le tabelle se esistono già per evitare conflitti
-DROP TABLE IF EXISTS movimenti;
-DROP TABLE IF EXISTS users;
+DROP TABLE IF exists titanic.movimenti;
+DROP TABLE IF EXISTS titanic.users;
 
 -- Crea la tabella users
-CREATE TABLE users (
+CREATE TABLE titanic.users (
     id_user SERIAL PRIMARY KEY,
     username VARCHAR(20) UNIQUE NOT NULL,
     password VARCHAR(20) NOT NULL, 
@@ -11,7 +11,7 @@ CREATE TABLE users (
 );
 
 -- Crea la tabella movimenti
-CREATE TABLE movimenti (
+CREATE TABLE titanic.movimenti (
     id_movimenti SERIAL PRIMARY KEY,
     id_user INT NOT NULL,
     tipo VARCHAR(7) NOT NULL,
